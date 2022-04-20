@@ -24,18 +24,18 @@ lr_finder.find(train_generator, startLR=1e-10, endLR=10, epochs=3, stepsPerEpoch
 lr_finder.plot_loss()
 ```
 
-![](https://s3.stackabuse.com/media/guided+projects/building-your-first-convolutional-neural-network-with-keras-5.png)
+![](https://imgur.com/L8H4Ryz)
 
 
 ```python
 # sma applies smoothing
-lr_finder.plot_loss_change(sma=1, y_lim=(-0.1, 0.1))
+lr_finder.plot_loss_change(sma=80, y_lim=(-0.1, 0.1))
 ```
 
-![](https://s3.stackabuse.com/media/guided+projects/building-your-first-convolutional-neural-network-with-keras-6.png)
+![](https://imgur.com/FQTbjW1)
 
 ```python
 # Get best LR (steepest loss)
-lr_finder.get_best_lr(sma=1) # 0.0022606123
+lr_finder.get_best_lr(sma=80) # 0.0022606123
 ```
 
