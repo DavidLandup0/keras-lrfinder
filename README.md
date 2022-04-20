@@ -28,7 +28,7 @@ lr_finder.plot_loss()
 
 
 ```python
-# 
+# sma applies smoothing
 lr_finder.plot_loss_change(sma=1, y_lim=(-0.1, 0.1))
 ```
 
